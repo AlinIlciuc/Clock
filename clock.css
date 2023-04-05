@@ -1,0 +1,82 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+    --background: rgb(20,110,80, 75%); 
+    --button: rgb(223, 213, 211);
+    --buttons-hover: #f4f4f4;
+}
+
+body {
+    background-color: var(--background);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.clockDigits {
+    width: fit-content;
+
+    text-align: center;
+
+    font-size: x-large;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    color: azure;
+    background-color: rgba(37, 31, 30, 0.384);
+
+    padding: .25em;
+    border: inset dotted #f4f4f4;
+    border-radius: 17px 17px;
+
+    margin-bottom: 3em;
+
+    box-shadow: 3px 5px 10px black;
+}
+
+.sp {
+    padding-inline: .5em;
+    text-shadow: 4px 4px 4px white, 1px 1px 2px black, 0 0 5px darkblue;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+
+    gap: 2.75em;
+}
+
+.restartBtn {
+    margin-top: -.65em;
+}
+
+.button {
+    font-size: large;
+    padding: .25em;
+    background-color: var(--button);
+    border-radius: 5px 5px;
+    border: 1px solid gray;
+
+    box-shadow: 2px 5px 5px gray;
+}
+
+.button:hover {
+    background-color: var(--buttons-hover);
+}
+
+.button:active {
+    transform: translateY(3px);
+    box-shadow: 1px 2.5px 5px black;
+}
